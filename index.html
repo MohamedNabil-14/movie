@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>movie db</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+
+
+        <!-- load -->
+        <div class="shadow">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+              </div>
+        </div>
+        <!-- end load -->
+
+        <!-- bookmark -->
+        <div class="book">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <h4 class="bg-light text-center py-1 rounded">Your Watchlist</h4>
+                        <button class="btn btn-outline-danger btn-sm clearlocal mr-4">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="after">
+                <i class="far fa-bookmark openclose"></i>
+            </div>
+            <div class="containss">
+                <div class="row bookdisplay p-4">
+                            
+                </div>
+            </div>
+        </div>
+        <!-- end bookmark -->
+
+
+
+        <!-- nav -->
+            <section id="nav">
+                <div class="contain row">
+                    <div class="col-10 navmenu p-4">
+                        <div class="row text-light category hide pl-3 pt-2">
+                                <p data-id="now_playing" class="p-0 border-left pl-3 mb-4 first">Now playing</p>
+       
+                                <p data-id="popular" class="p-0 border-left pl-3 mb-4 first">Popular</p>
+                        
+                                <p data-id="top_rated" class="p-0 border-left pl-3 mb-4 first">Top Rated</p>
+
+                                <p data-id="trending" class="p-0 border-left pl-3 mb-4 first">Trending</p>
+                        
+                                <p data-id="upcoming" class="p-0 border-left pl-3 mb-4 first">Upcoming</p>
+                            
+                                <a href="#contacus"><p data-id=""  class="p-0 border-left pl-3 mb-4 first Contactus">Contact Us</p></a>
+                        </div>
+                        <div class="row">
+                            <div class="contacticon text-light p-3">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-twitter-square px-2"></i>
+                                <i class="fas fa-globe"></i>
+                                <p style="font-size: 0.8rem" class="pt-2" >Copyright Â© 2019 All Rights Reserved.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-2  bg-light fffffff">
+                        <div class="row divicon text-center h-100 mt-3">
+                            <div style="font-size: 2rem;" class="col p-0">
+                                <div class="divtoinmate"><i class="fas fa-level-up-alt py-2"></i></div>
+                            </div>
+                            <div style="font-size: 1.7rem;cursor: pointer;" class="col centericon p-0">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div style="font-size: 1.2rem;" class="col lasticon">
+                                <i class="fas fa-globe my-2"></i>
+                                <i class="far fa-share-square mt-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- end nav -->
+
+
+        <!-- search -->
+        <section id="search" class="pt-3">
+            <div class="container pt-1">
+                <div class="row mediasm">
+                    <div class="col-md-6 mb-3">
+                        <input onkeyup="search(this.value)" type="text" class="input-group input-group-sm text-center myinput " placeholder="get movies by word...">
+                    </div>
+                    <div class="col-md-6">
+                        <input onkeyup="searchword(this.value)" type="text" class=" input-group input-group-sm text-center myinput" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  end search -->
+
+
+
+        <!-- display items -->
+            <section id="display">
+                <div class="container">
+                    <div class="row pt-4 refoo">
+                        
+                    </div>
+                </div>
+            </section>
+        <!-- end display items -->
+
+
+
+        <!-- ContacUs... -->
+        <section id="contacusoff">
+            <div class="container my-5">
+                <div class="row allinputs">
+                    <div class="col-md-6 mb-4"><input class=" input-group input-group-sm text-center myinput mb-2" name="name" type="text" placeholder="Enter Your Name">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            your Name is not valid
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"><input class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Mail" name="email">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            entre valid email
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"><input class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Phone" name="phone">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            entre valid phone
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"><input  class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Age" name="age">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            entre valid Age
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"><input  class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Password" name="password">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            entre valid password *Minimum eight characters, at least one letter and one number:*
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"><input class=" input-group input-group-sm text-center myinput mb-2" type="text" placeholder="Enter Repassword" name="rpassword">
+                        <div class="alert alertname alert-danger text-center hideee" role="alert">
+                            repassword is not the SAME!
+                          </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary mybtn disabled">Submit</button>
+            </div>
+        </section>
+        <!-- end ContacUs... -->
+
+
+
+ <script src="js/jquery-3.5.1.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script src="js/main.js"> </script>
+    </body>
+</html>
